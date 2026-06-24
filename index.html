@@ -682,7 +682,8 @@ body {
    ============================================================ */
 footer {
   background: var(--dark-bg);
-  padding: 3rem 1.2rem calc(2rem + env(safe-area-inset-bottom, 0px));
+  /* extra bottom padding so the floating music button never overlaps content */
+  padding: 3rem 1.2rem calc(6rem + env(safe-area-inset-bottom, 0px));
   text-align: center;
   position: relative;
   overflow: hidden;
